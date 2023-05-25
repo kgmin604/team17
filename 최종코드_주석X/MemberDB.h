@@ -6,15 +6,20 @@
 #include "GeneralMember.h"
 #include <vector>
 
+/*
+- í´ë˜ìŠ¤ ì´ë¦„: MemberDB
+- í´ë˜ìŠ¤ ì„¤ëª…: ë©¤ë²„ ì •ë³´ë¥¼ ì €ì¥í•˜ê³  ê´€ë¦¬í•œë‹¤. 
+*/
+
 class MemberDB {
 	vector<Member*> member_list_;
 	int member_num_;
 public:
-	MemberDB();								//»ı¼ºÀÚ. member_num_¸¦ 0À¸·Î ÃÊ±âÈ­.
+	MemberDB();								//ìƒì„±ì. member_num_ë¥¼ 0ìœ¼ë¡œ ì´ˆê¸°í™”.
 
-	void addMember(Member* newMem);			//ÀÎÀÚ·Î ¹ŞÀº Member °´Ã¼¸¦ member_list_¿¡ Ãß°¡
-	Member* deleteMember(Member* delMem);	//ÀÎÀÚ·Î ¹ŞÀº Member °´Ã¼¸¦ member_list_¿¡¼­ Á¦°Å ÈÄ ÇØ´ç °´Ã¼ ¹İÈ¯
-	vector<Member*>& getMemberList();		// member_list_ ¹İÈ¯
+	void addMember(Member* newMem);			//ì¸ìë¡œ ë°›ì€ Member ê°ì²´ë¥¼ member_list_ì— ì¶”ê°€
+	Member* deleteMember(Member* delMem);	//ì¸ìë¡œ ë°›ì€ Member ê°ì²´ë¥¼ member_list_ì—ì„œ ì œê±° í›„ í•´ë‹¹ ê°ì²´ ë°˜í™˜
+	vector<Member*>& getMemberList();		// member_list_ ë°˜í™˜
 	
 };
 #endif 
