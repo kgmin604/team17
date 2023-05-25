@@ -5,22 +5,24 @@
 #include <vector>
 
 /*
-* ApplicationCollection Å¬·¡½º
-* Application ¸®½ºÆ®·Î °ü¸®ÇÑ´Ù.
-* ¸®½ºÆ®¿¡ ApplicationÀ» Ãß°¡ÇÏ°Å³ª ÀÖ´Â Application »èÁ¦ÇÏ´Â ±â´É°ú
-* ÀúÀåµÈ Application ¸®½ºÆ®¸¦ ¹İÈ¯ÇÏ´Â ±â´ÉÀÌ ÀÖ´Ù.
+- í´ë˜ìŠ¤ ì´ë¦„: ApplicationCollection
+- í´ë˜ìŠ¤ ì„¤ëª…
+* Application ë¦¬ìŠ¤íŠ¸ë¡œ ê´€ë¦¬í•œë‹¤.
+* ë¦¬ìŠ¤íŠ¸ì— Applicationì„ ì¶”ê°€í•˜ê±°ë‚˜ ìˆëŠ” Application ì‚­ì œí•˜ëŠ” ê¸°ëŠ¥ê³¼
+* ì €ì¥ëœ Application ë¦¬ìŠ¤íŠ¸ë¥¼ ë°˜í™˜í•˜ëŠ” ê¸°ëŠ¥ì´ ìˆë‹¤.
 */
+
 class ApplicationCollection : Application
 {
 private:
 	vector<Application*> app_list_;
 	int app_num_;
 public:
-	ApplicationCollection();								// »ı¼ºÀÚ. app_num_À» 0À¸·Î ÃÊ±âÈ­.
-	void addApplication(Application* newApp);				// ÀÎÀÚ·Î ¹ŞÀº Application °´Ã¼¸¦ app_list_¿¡ Ãß°¡
-	void deleteApplication(Application* delApp);			// ÀÎÀÚ·Î ¹ŞÀº Application °´Ã¼¸¦ app_list_¿¡¼­ »èÁ¦ ÈÄ ÇØ´ç °´Ã¼ ¹İÈ¯
-	vector<Application*>& getApplicationList();				// app_list_ ¹İÈ¯
-	int getAppNum();										// Áö¿øÀÚ ¼ö app_num ¹İÈ¯
+	ApplicationCollection();								// ìƒì„±ì. app_num_ì„ 0ìœ¼ë¡œ ì´ˆê¸°í™”.
+	void addApplication(Application* newApp);				// ì¸ìë¡œ ë°›ì€ Application ê°ì²´ë¥¼ app_list_ì— ì¶”ê°€
+	void deleteApplication(Application* delApp);			// ì¸ìë¡œ ë°›ì€ Application ê°ì²´ë¥¼ app_list_ì—ì„œ ì‚­ì œ í›„ í•´ë‹¹ ê°ì²´ ë°˜í™˜
+	vector<Application*>& getApplicationList();				// app_list_ ë°˜í™˜
+	int getAppNum();										// ì§€ì›ì ìˆ˜ app_num ë°˜í™˜
 };
 
 #endif // !__ApplicationCollection_H
