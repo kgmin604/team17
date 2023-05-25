@@ -4,19 +4,19 @@
 #include "Employment.h"
 
 /*
-    Å¬·¡½ºÀÌ¸§:EmploymentCollecttion
-    Ã¤¿ë Á¤º¸¸¦ °ü¸®ÇÏ´Â Employment °´Ã¼ °ü¸®
- */
+- í´ë˜ìŠ¤ ì´ë¦„: EmploymentCollecttion
+- í´ë˜ìŠ¤ ì„¤ëª…: ì±„ìš© ì •ë³´ë¥¼ ê´€ë¦¬í•˜ëŠ” Employment ê°ì²´ ê´€ë¦¬
+*/
 
 class EmploymentCollection {
 private:
     vector<Employment*> emps_;
     int emp_num_;
 public:
-    EmploymentCollection();                             // »ı¼ºÀÚ. emp_num_À» 0À¸·Î ÃÊ±âÈ­
-    void addEmployment(Employment* newEmp);             // ÀÎÀÚ·Î ¹ŞÀº Employment °´Ã¼¸¦ emps_¿¡ Ãß°¡
-    Employment* deleteEmployment(Employment* delEmp);   // ÀÎÀÚ·Î ¹ŞÀº Employment °´Ã¼¸¦ emps_¿¡¼­ Á¦°Å ÈÄ ÇØ´ç °´Ã¼ ¹İÈ¯
-    vector<Employment*>& getEmploymentList();           // Employment* ¸®½ºÆ®(º¤ÅÍ) ¹İÈ¯
+    EmploymentCollection();                             // ìƒì„±ì. emp_num_ì„ 0ìœ¼ë¡œ ì´ˆê¸°í™”
+    void addEmployment(Employment* newEmp);             // ì¸ìë¡œ ë°›ì€ Employment ê°ì²´ë¥¼ emps_ì— ì¶”ê°€
+    Employment* deleteEmployment(Employment* delEmp);   // ì¸ìë¡œ ë°›ì€ Employment ê°ì²´ë¥¼ emps_ì—ì„œ ì œê±° í›„ í•´ë‹¹ ê°ì²´ ë°˜í™˜
+    vector<Employment*>& getEmploymentList();           // Employment* ë¦¬ìŠ¤íŠ¸(ë²¡í„°) ë°˜í™˜
 };
 
 
