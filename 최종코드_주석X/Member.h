@@ -4,18 +4,24 @@
 #include <string>
 using namespace std;
 
+/*
+<<entity>>
+- í´ë˜ìŠ¤ ì´ë¦„: Member
+- í´ë˜ìŠ¤ ì„¤ëª…: íšŒì›ê´€ë¦¬
+*/
+
 class Member {
 protected:
 	int type;
 	string id;
 	string pw;
 public:
-	Member(int type, string id, string pw);	// »ı¼ºÀÚ. È¸¿ø Á¾·ù, ¾ÆÀÌµğ, ºñ¹Ğ¹øÈ£¸¦ ÀÎÀÚ·Î ¹Ş¾Æ ¸â¹ö °´Ã¼ »ı¼º
-	bool checkIdPw(string id, string pw);	// ¸Å°³º¯¼ö·Î ¹ŞÀº id¿Í password°¡ Member°´Ã¼¿Í ÀÏÄ¡ÇÑÁö ¾Æ´ÑÁö¸¦ È®ÀÎÇÏ¿© true/false ¹İÈ¯
-	int getType();							// Member °´Ã¼ÀÇ È¸¿ø Á¾·ù(type) ¹İÈ¯. 1ÀÌ¸é È¸»ç È¸¿ø. 2¸é ÀÏ¹İ È¸¿ø.
-	string getID();							// Member °´Ã¼ÀÇ id ¹İÈ¯.
-	virtual string getName() = 0;			// MemberÀÇ ÀÚ½Ä °´Ã¼ÀÇ name(name ¶Ç´Â coporationName) ¹İÈ¯.
-	virtual string getNumber() = 0;			// MemberÀÇ ÀÚ½Ä °´Ã¼ÀÇ number(registrationNumber ¶Ç´Â businessNumber) ¹İÈ¯.
+	Member(int type, string id, string pw);	// ìƒì„±ì. íšŒì› ì¢…ë¥˜, ì•„ì´ë””, ë¹„ë°€ë²ˆí˜¸ë¥¼ ì¸ìë¡œ ë°›ì•„ ë©¤ë²„ ê°ì²´ ìƒì„±
+	bool checkIdPw(string id, string pw);	// ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ì€ idì™€ passwordê°€ Memberê°ì²´ì™€ ì¼ì¹˜í•œì§€ ì•„ë‹Œì§€ë¥¼ í™•ì¸í•˜ì—¬ true/false ë°˜í™˜
+	int getType();							// Member ê°ì²´ì˜ íšŒì› ì¢…ë¥˜(type) ë°˜í™˜. 1ì´ë©´ íšŒì‚¬ íšŒì›. 2ë©´ ì¼ë°˜ íšŒì›.
+	string getID();							// Member ê°ì²´ì˜ id ë°˜í™˜.
+	virtual string getName() = 0;			// Memberì˜ ìì‹ ê°ì²´ì˜ name(name ë˜ëŠ” coporationName) ë°˜í™˜.
+	virtual string getNumber() = 0;			// Memberì˜ ìì‹ ê°ì²´ì˜ number(registrationNumber ë˜ëŠ” businessNumber) ë°˜í™˜.
 };
 
 #endif
