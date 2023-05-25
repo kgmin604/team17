@@ -8,6 +8,12 @@
 #include "ApplicationCollection.h"
 using namespace std;
 
+/*
+<<entity>>
+- í´ë˜ìŠ¤ ì´ë¦„: GeneralMember
+- í´ë˜ìŠ¤ ì„¤ëª…: ì¼ë°˜íšŒì›ì„ ê´€ë¦¬í•œë‹¤.
+*/
+
 class GeneralMember : public Member {
 private:
     string name;
@@ -16,12 +22,12 @@ private:
 
 public:
     GeneralMember(int type, string id, string pw, string name, string registrationNumber);  
-                                                            // Å¸ÀÔ, ¾ÆÀÌµğ, ºñ¹Ğ¹øÈ£, ÀÌ¸§, ÁÖ¹Îµî·Ï¹øÈ£¸¦ ¹Ş¾Æ GeneralMember °´Ã¼ »ı¼º
-    vector<Application*>& getApplicationList();             // Application* º¤ÅÍ(¸®½ºÆ®) ÂüÁ¶ ¹İÈ¯
-    void addApplication(Application* newApp);               // ÀÎÀÚ·Î ¹ŞÀº Application °´Ã¼¸¦ collection¿¡ Ãß°¡
-    void deleteApplication(Application* delApp);            // ÀÎÀÚ·Î ¹ŞÀº Application °´Ã¼¸¦ collection¿¡¼­ »èÁ¦
-    virtual string getName();                               // È¸»ç ÀÌ¸§ ¹İÈ¯
-    virtual string getNumber();                             // ÁÖ¹Îµî·Ï¹øÈ£ ¹İÈ¯
+                                                            // íƒ€ì…, ì•„ì´ë””, ë¹„ë°€ë²ˆí˜¸, ì´ë¦„, ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ë¥¼ ë°›ì•„ GeneralMember ê°ì²´ ìƒì„±
+    vector<Application*>& getApplicationList();             // Application* ë²¡í„°(ë¦¬ìŠ¤íŠ¸) ì°¸ì¡° ë°˜í™˜
+    void addApplication(Application* newApp);               // ì¸ìë¡œ ë°›ì€ Application ê°ì²´ë¥¼ collectionì— ì¶”ê°€
+    void deleteApplication(Application* delApp);            // ì¸ìë¡œ ë°›ì€ Application ê°ì²´ë¥¼ collectionì—ì„œ ì‚­ì œ
+    virtual string getName();                               // íšŒì‚¬ ì´ë¦„ ë°˜í™˜
+    virtual string getNumber();                             // ì£¼ë¯¼ë“±ë¡ë²ˆí˜¸ ë°˜í™˜
 };
 
 #endif /* GeneralMember_hpp */
