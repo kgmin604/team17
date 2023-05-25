@@ -6,12 +6,14 @@
 #include "MemberDB.h"
 
 /*
-* CancelApplyUI Å¬·¡½º
-* ÇöÀç È¸¿ø Á¤º¸, Áö¿øÀ» Ãë¼ÒÇÏ°íÀÚ ÇÏ´Â ±â¾÷ÀÇ »ç¾÷ÀÚ ¹øÈ£, È¸¿ø ¸ñ·ÏÀ» ¸Å°³º¯¼ö·Î ¹Þ¾Æ
-* »ç¾÷ÀÚ ¹øÈ£¸¦ ÅëÇØ »èÁ¦°¡ ¿äÃ»µÈ Application °´Ã¼, ÇØ´ç °´Ã¼°¡ ¼ÓÇÑ Employment¸¦ Ã£¾Æ
-* curMemÀÇ Áö¿ø ¸®½ºÆ®¿¡¼­ Á¦¿ÜÇÏ°í
-* EploymentÀÇ Áö¿ø ¸®½ºÆ®¿¡¼­ Á¦¿ÜÇÏ°í
-* »èÁ¦°¡ ¿äÃ»µÈ Application °´Ã¼¸¦ ¼Ò¸ê½ÃÅ²´Ù.
+<<control>>
+- í´ëž˜ìŠ¤ ì´ë¦„: CancelApply
+- í´ëž˜ìŠ¤ ì„¤ëª…
+* í˜„ìž¬ íšŒì› ì •ë³´, ì§€ì›ì„ ì·¨ì†Œí•˜ê³ ìž í•˜ëŠ” ê¸°ì—…ì˜ ì‚¬ì—…ìž ë²ˆí˜¸, íšŒì› ëª©ë¡ì„ ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ì•„
+* ì‚¬ì—…ìž ë²ˆí˜¸ë¥¼ í†µí•´ ì‚­ì œê°€ ìš”ì²­ëœ Application ê°ì²´, í•´ë‹¹ ê°ì²´ê°€ ì†í•œ Employmentë¥¼ ì°¾ì•„
+* curMemì˜ ì§€ì› ë¦¬ìŠ¤íŠ¸ì—ì„œ ì œì™¸í•˜ê³ 
+* Employmentì˜ ì§€ì› ë¦¬ìŠ¤íŠ¸ì—ì„œ ì œì™¸í•˜ê³ 
+* ì‚­ì œê°€ ìš”ì²­ëœ Application ê°ì²´ë¥¼ ì†Œë©¸ì‹œí‚¨ë‹¤.
 */
 
 class CancelApply {
