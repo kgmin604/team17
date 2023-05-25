@@ -5,6 +5,12 @@
 #include "EmploymentCollection.h"
 using namespace std;
 
+/*
+<<entity>>
+- í´ë˜ìŠ¤ ì´ë¦„: CorporateMember
+- í´ë˜ìŠ¤ ì„¤ëª…: íšŒì‚¬íšŒì›ì„ ê´€ë¦¬í•œë‹¤.
+*/
+
 class CorporateMember : public Member {
 private:
     string coporationName;
@@ -13,13 +19,13 @@ private:
 
 public:
     CorporateMember(int type, string id, string pw, string CoporationName, string businessNumber);  
-                                                    // Å¸ÀÔ, ¾ÆÀÌµğ, ºñ¹Ğ¹øÈ£, È¸ÀÌ¸§, »ç¾÷ÀÚ¹øÈ£¸¦ ¹Ş¾Æ
-                                                    // CorporateMember °´Ã¼ »ı¼º
-    vector< Employment*>& getEmploymentList();            // Employment* º¤ÅÍ(¸®½ºÆ®) ÂüÁ¶ ¹İÈ¯
-    CorporateMember* getCorporateMember();      // CorporateMember(ÀÚ±âÀÚ½Å) ¹İÈ¯
-    void addNewEmployment(Employment* newEmp);  // ÀÎÀÚ·Î ¹ŞÀº Employment °´Ã¼¸¦ collection¿¡ Ãß°¡
-    virtual string getName();                   // ÀÌ¸§ ¹İÈ¯
-    virtual string getNumber();                 // »ç¾÷ÀÚ ¹øÈ£ ¹İÈ¯
+                                                    // íƒ€ì…, ì•„ì´ë””, ë¹„ë°€ë²ˆí˜¸, íšŒì´ë¦„, ì‚¬ì—…ìë²ˆí˜¸ë¥¼ ë°›ì•„
+                                                    // CorporateMember ê°ì²´ ìƒì„±
+    vector< Employment*>& getEmploymentList();            // Employment* ë²¡í„°(ë¦¬ìŠ¤íŠ¸) ì°¸ì¡° ë°˜í™˜
+    CorporateMember* getCorporateMember();      // CorporateMember(ìê¸°ìì‹ ) ë°˜í™˜
+    void addNewEmployment(Employment* newEmp);  // ì¸ìë¡œ ë°›ì€ Employment ê°ì²´ë¥¼ collectionì— ì¶”ê°€
+    virtual string getName();                   // ì´ë¦„ ë°˜í™˜
+    virtual string getNumber();                 // ì‚¬ì—…ì ë²ˆí˜¸ ë°˜í™˜
 };
 
 #endif // !__CorporateMEMBER_H
