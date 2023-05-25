@@ -8,8 +8,9 @@
 using namespace std;
 
 /*
-* Employment Å¬·¡½º
-* »ç¾÷ÀÚ°¡ µî·ÏÇÑ Ã¤¿ë Á¤º¸¸¦ ÀúÀåÇÑ´Ù.
+<<entity>>
+- í´ë˜ìŠ¤ ì´ë¦„: Employment
+- í´ë˜ìŠ¤ ì„¤ëª…: ì‚¬ì—…ìê°€ ë“±ë¡í•œ ì±„ìš© ì •ë³´ë¥¼ ì €ì¥í•œë‹¤.
 */
 
 class Employment {
@@ -19,10 +20,10 @@ private:
     string application_deadline_;
     ApplicationCollection app_collection;
 public:
-    Employment(string part, int number_of_people, string application_deadline);                     // »ı¼ºÀÚ. ¾÷¹«, ÀÎ¿ø ¼ö, ½ÅÃ» ¸¶°¨ÀÏ¸¦ ÀÎÀÚ·Î ¹Ş¾Æ »ı¼º.
-    void getDetailEmployment(string& part, int& number_of_people, string& application_deadline);    // EmploymentÀÇ attribute¸¦ ÂüÁ¶·Î ¹ŞÀº ÀÎÀÚ¿¡ ÀúÀå
-    void addApplication(Application* newApp);                                                       // ÀÎÀÚ·Î ¹ŞÀº newAppÀ» app_collection¿¡ Ãß°¡
-    void deleteApplication(Application* delApp);                                                    // ÀÎÀÚ·Î ¹ŞÀº newAppÀ» app_collection¿¡ Ãß°¡
+    Employment(string part, int number_of_people, string application_deadline);                     // ìƒì„±ì. ì—…ë¬´, ì¸ì› ìˆ˜, ì‹ ì²­ ë§ˆê°ì¼ë¥¼ ì¸ìë¡œ ë°›ì•„ ìƒì„±.
+    void getDetailEmployment(string& part, int& number_of_people, string& application_deadline);    // Employmentì˜ attributeë¥¼ ì°¸ì¡°ë¡œ ë°›ì€ ì¸ìì— ì €ì¥
+    void addApplication(Application* newApp);                                                       // ì¸ìë¡œ ë°›ì€ newAppì„ app_collectionì— ì¶”ê°€
+    void deleteApplication(Application* delApp);                                                    // ì¸ìë¡œ ë°›ì€ newAppì„ app_collectionì— ì¶”ê°€
     int getNumberOfApps();
 };
 
