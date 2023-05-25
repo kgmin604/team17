@@ -3,7 +3,7 @@
 #include "Application.h"
 using namespace std;
 
-Application::Application(string part, string company_name, string business_number, int number_of_people, int application_deadline) {
+Application::Application(string part, string company_name, string business_number, int number_of_people, string application_deadline) {
 	part_ = part;
 	company_name_ = company_name;
 	business_number_ = business_number;
@@ -11,7 +11,7 @@ Application::Application(string part, string company_name, string business_numbe
 	application_deadline_ = application_deadline;
 }
 
-void Application::getDetailApplication(string& part, string& company_name, string& business_number, int& number_of_people, int& application_deadline) {
+void Application::getDetailApplication(string& part, string& company_name, string& business_number, int& number_of_people, string& application_deadline) {
 	part = part_;
 	company_name = company_name_;
 	business_number = business_number_;

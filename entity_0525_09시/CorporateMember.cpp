@@ -10,8 +10,8 @@ CorporateMember::CorporateMember(int type, string id, string pw, string Coporati
     this->businessNumber = businessNumber;
 }
 
-Employment* CorporateMember::getEmploymentList() {
-    emp_collection.getEmploymentList();
+vector< Employment*>& CorporateMember::getEmploymentList() {
+    return emp_collection.getEmploymentList();
 }
 
 CorporateMember* CorporateMember::getCorporateMember() {
@@ -27,6 +27,6 @@ string CorporateMember::getName() {
     return coporationName;
 }
 
-string CorporateMember::number() {
+string CorporateMember::getNumber() {
     return businessNumber;
 }

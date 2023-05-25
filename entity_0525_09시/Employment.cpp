@@ -15,3 +15,7 @@ void Employment::getDetailEmployment(string& part, int& number_of_people, string
 void Employment::addApplication(Application* newApp) {
     app_collection.addApplication(newApp);
 }
+
+void Employment::deleteApplication(Application* delApp) {
+    app_collection.deleteApplication(delApp);
+}

@@ -13,12 +13,11 @@ void ApplicationCollection::addApplication(Application* newApp) {
 	app_num_++;
 }
 
-Application* ApplicationCollection::deleteApplication(Application* delApp) {
+void ApplicationCollection::deleteApplication(Application* delApp) {
 	for(int i=0;i<app_num_;i++)
 		if (app_list_[i] == delApp) {
 			app_list_.erase(app_list_.begin() + i);
 			app_num_--;
-			return delApp;
 		}
 }
 

@@ -15,13 +15,13 @@ void GeneralMember::addApplication(Application* newApp){
     app_collection.addApplication(newApp);
 }
 
-Application* GeneralMember::deleteApplication(Application* delApp) {
+void GeneralMember::deleteApplication(Application* delApp) {
     return app_collection.deleteApplication(delApp);
 }
 
 string GeneralMember::getName() {
     return name;
 }
-string GeneralMember::number() {
+string GeneralMember::getNumber() {
     return registrationNumber;
 }

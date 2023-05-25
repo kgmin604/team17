@@ -3,6 +3,16 @@
 #include <vector>
 #include <string>
 
+#include "MemberDB.h"
+#include "CorporateMember.h"
+#include "GeneralMember.h"
+#include "EmploymentCollection.h"
+
+#include "CancelApplyUI.h"
+#include "CancelApply.h"
+#include "showMyStatsUI.h"
+#include "showMyStats.h"
+
 #define _CRT_SECURE_NO_WARNINGS
 
 #define MAX_STRING 32
@@ -19,18 +29,38 @@ ifstream fin;
 /* 함수 */
 void doTask();
 
+
+/**************나중에 doTask 안으로 옮기기 => 테스트 용으로 전역에서 사용***************/
+MemberDB member_db;
+Member* curMem = NULL;
+
+//CancelApply cancle_apply;
+//CancelApplyUI cancle_apply_ui(&cancle_apply);
+showMyStats show_my_stats;
+showMyStatsUI show_my_stats_ui(&show_my_stats);
+
+/**************나중에 doTask 안으로 옮기기 => 테스트 용으로 전역에서 사용***************/
+
+void test() {
+	GeneralMember* gm = new GeneralMember(2, "id", "name", "num", "pw");
+	member_db.addMember(gm);
+	curMem = gm;
+	show_my_stats_ui.showMyApplicationsStats((GeneralMember*)curMem);
+}
+
+/**************나중에 doTask 안으로 옮기기 => 테스트 용으로 전역에서 사용***************/
+
 int main(void) {
 	fout.open(OUTPUT_FILE_NAME);
 	fin.open(INPUT_FILE_NAME);
 
-	doTask();
+	test();
+	//doTask();
 	
 	return 0;
 }
 
 void doTask() {
-	Member* curMem = NULL;
-
 	int menu1 = 0, menu2 = 0;
 	bool is_program_exit = false;
 
@@ -48,36 +78,20 @@ void doTask() {
 				fin >> type; 
 				fin >> name >> number >> id >> pw;
 
-				//함수 실행
 
-				fout << "1.1. 회원가입\n";
-				fout << "> " << type << ' ' << name << ' ' << number << ' ' << id << ' ' << pw << "\n";
 			}
 			else if (menu2 == 2) {	// 1.2 회원 탈퇴
 				
-				// 함수 실행
-
-				fout << "1.2. 회원탈퇴\n";
-				fout << "> " << curMem->getID() << "\n";
 			}
 			break;
 		case 2:
 			if (menu2 == 1) {		// 2.1 로그인
 				string id, pw;
 				fin >> id >> pw;
-				// 함수 실행
-				
-				fout << "2.1. 로그인\n";
-				fout << "> " << id << " " << pw << "\n";
+
 			}
 			else if (menu2 == 2) {	// 2.2 로그아웃
 				
-				string tmp = curMem->getID();
-
-				// 요청
-
-				fout << "2.1. 로그아웃\n";
-				fout << "> " << tmp << "\n";
 			}
 			break;
 		case 3:
@@ -85,8 +99,6 @@ void doTask() {
 				string task, total_num, deadline_date;
 				fin >> task >> total_num >> deadline_date;
 
-				fout << "3.1. 채용 정보 등록\n";
-				fout << "> " << task << " " << total_num << " " << deadline_date << "\n";
 			}
 			else if (menu2 == 2) {	// 3.2 등록된 채용 정보 조회
 
@@ -94,21 +106,25 @@ void doTask() {
 			break;
 		case 4:
 			if (menu2 == 1) {		// 4.1 채용 정보 검색
+				string corporate_name;
+				fin >> corporate_name;
 
 			}
 			else if (menu2 == 2) {	// 4.2 채용 지원
-
+				string business_number;
+				fin >> business_number;
 			}
 			else if (menu2 == 3) {	// 4.3 지원 정보 조회
 
 			}
 			else if (menu2 == 4) {	// 4.4 지원 취소
-
+				string business_number;
+				fin >> business_number;
 			}
 			break;
 		case 5:
 			if (menu2 == 1) {		// 5.1 지원 정보 통계
-
+				show_my_stats_ui.showMyApplicationsStats((GeneralMember*)curMem);
 			}
 			break;
 		case 6:
@@ -118,3 +134,4 @@ void doTask() {
 		}
 	}
 }
+

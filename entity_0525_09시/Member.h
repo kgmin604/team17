@@ -15,7 +15,7 @@ public:
 	int getType();							// Member 객체의 회원 종류(type) 반환. 1이면 회사 회원. 2면 일반 회원.
 	string getID();							// Member 객체의 id 반환.
 	virtual string getName() = 0;			// Member의 자식 객체의 name(name 또는 coporationName) 반환.
-	virtual string number() = 0;			// Member의 자식 객체의 number(registrationNumber 또는 businessNumber) 반환.
+	virtual string getNumber() = 0;			// Member의 자식 객체의 number(registrationNumber 또는 businessNumber) 반환.
 };
 
 #endif
