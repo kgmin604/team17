@@ -4,7 +4,6 @@
 
 #include "Member.h"
 #include "CorporateMember.h"
-bhhh
 //AddEmployment
 //Ã¤¿ë Á¤º¸ µî·Ï
 
