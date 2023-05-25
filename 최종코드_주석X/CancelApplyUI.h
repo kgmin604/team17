@@ -6,8 +6,9 @@
 #include "CancelApply.h"
 
 /*
-* CancelApplyUI Ŭ����
-* �Ϲ� ȸ���� ���� ��� ��û�� �޾� CancelApply(control class)���� ��� ��û
+<<boundary>>
+- 클래스 이름: CancelApplyUI
+- 클래스 설명: 일반 회원의 지원 취소 요청을 받아 CancelApply <<control>>에게 취소 요청
 */
 
 class CancelApplyUI {
