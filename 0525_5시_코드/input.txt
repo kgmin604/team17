@@ -1,0 +1,8 @@
+1 1 1 hankook 3456 hk pwd1
+2 1 hk pwd1
+3 1 front 10 2023/05/31
+3 1 backend 5 2023/06/04
+3 1 front 5 2023/07/01
+5 1
+2 2
+6 1
