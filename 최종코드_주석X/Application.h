@@ -6,8 +6,9 @@
 using namespace std;
 
 /*
-Application Å¬·¡½º
-Ã¤¿ë Áö¿ø¿¡ ´ëÇÑ ³»¿ëÀ» °ü¸®ÇÑ´Ù.
+<<entity>>
+- í´ë˜ìŠ¤ ì´ë¦„: Application
+- í´ë˜ìŠ¤ ì„¤ëª…: ì±„ìš© ì§€ì›ì— ëŒ€í•œ ë‚´ìš©ì„ ê´€ë¦¬í•œë‹¤.
 */
 
 class Application
@@ -22,10 +23,10 @@ public:
 	Application() {}
 	Application(string part, string compyny_name, string business_number, int number_of_people, string application_deadline);
 	
-	// ApplicationÀÇ ¾÷¹«, È¸»ç ÀÌ¸§, »ç¾÷ÀÚ ¹øÈ£, ÀÎ¿ø, ½ÅÃ»¸¶°¨ÀÏ Á¤º¸¸¦ ¹Ş¾Æ¿Â´Ù.
+	// Applicationì˜ ì—…ë¬´, íšŒì‚¬ ì´ë¦„, ì‚¬ì—…ì ë²ˆí˜¸, ì¸ì›, ì‹ ì²­ë§ˆê°ì¼ ì •ë³´ë¥¼ ë°›ì•„ì˜¨ë‹¤.
 	void getDetailApplication(string& part, string& compyny_name, string& business_number, int& number_of_people, string& application_deadline);
 
-	// Application °´Ã¼¸¦ ¹İÈ¯ÇÑ´Ù.
+	// Application ê°ì²´ë¥¼ ë°˜í™˜í•œë‹¤.
 	Application* getApplication();
 };
 
