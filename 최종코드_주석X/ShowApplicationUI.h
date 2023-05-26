@@ -5,9 +5,9 @@
 /*
     <<boundary>>
 
-    - Å¬·¡½º ÀÌ¸§: ShowApplicationUI
-    - Å¬·¡½º ¼³¸í:
-    »ç¿ëÀÚ¿¡°Ô Áö¿øÁ¤º¸ Á¶È¸ ¿äÃ»À» ¹ŞÀºÈÄ ¿äÃ»À» controlÅ¬·¡½º¿¡ ³Ñ°ÜÁØ´Ù.
+    - í´ë˜ìŠ¤ ì´ë¦„: ShowApplicationUI
+    - í´ë˜ìŠ¤ ì„¤ëª…:
+    ì‚¬ìš©ìì—ê²Œ ì§€ì›ì •ë³´ ì¡°íšŒ ìš”ì²­ì„ ë°›ì€í›„ ìš”ì²­ì„ controlí´ë˜ìŠ¤ì— ë„˜ê²¨ì¤€ë‹¤.
 
 */
 class ShowApplicationUI
@@ -16,7 +16,7 @@ class ShowApplicationUI
 
 public:
     ShowApplicationUI(ShowApplication* control);
-    void requestShowApplication(GeneralMember* curMem);
+    void requestShowApplication(GeneralMember* curMem);     //í˜„ì¬ ë§´ë²„ ì •ë³´ì™€ í•¨ê»˜ ì§€ì›ì •ë³´ ì¡°íšŒìš”ì²­ì„ controlí´ë˜ìŠ¤ë¡œ ë„˜ê²¨ì¤€ë‹¤
 };
 
 #endif
