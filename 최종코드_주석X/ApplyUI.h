@@ -14,7 +14,7 @@ class ApplyUI{
 	Apply* Apply_control;
 public:
 	ApplyUI(Apply* control);
-	void apply(GeneralMember* curMem, string businessNumber, MemberDB& memDB);
+	void apply(GeneralMember* curMem, string businessNumber, MemberDB& memDB);//사용자로부터 받은 지원요청을 control클래스에게 넘겨준다.
 };
 
 #endif
