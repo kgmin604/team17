@@ -17,7 +17,7 @@
 
 class Apply {
 public:
-	void applyEmployment(GeneralMember* curMem, string businessNumber, MemberDB& memDB);
+	void applyEmployment(GeneralMember* curMem, string businessNumber, MemberDB& memDB);//사업자 번호를 받아와 채용정보리스트를찾아 Application객체 생성한다.
 };
 
 #endif
