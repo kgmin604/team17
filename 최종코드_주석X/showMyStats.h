@@ -4,8 +4,9 @@
 #include "GeneralMember.h"
 
 /*
-* showMyStats Å¬·¡½º
-* ÇöÀç ·Î±×ÀÎ µÈ È¸»çÈ¸¿øÀÇ ¾÷¹«º° Áö¿ø È½¼ö¸¦ ¾Ë·ÁÁÖ´Â Åë°è ±â´ÉÀÌ ÀÖ´Ù.
+* <<control>>
+- í´ëž˜ìŠ¤ ì´ë¦„: showMyStatsnt
+- í´ëž˜ìŠ¤ ì„¤ëª…: AddEmploymentUI<<boundary>>ì—ì„œ ì „ë‹¬ë°›ì€ í˜„ìž¬ ë¡œê·¸ì¸ëœ ë©¤ë²„ì˜ ì—…ë¬´ë³„ ì§€ì› íšŸìˆ˜ë¥¼ ì¶œë ¥í•œë‹¤.
 */
 
 class showMyStats {
