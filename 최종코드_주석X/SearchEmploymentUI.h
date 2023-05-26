@@ -4,9 +4,9 @@
 #include "SearchEmployment.h"
 /*
     <<boundary>>
-    - Å¬·¡½º ÀÌ¸§: SearchEmploymentUI
-    - Å¬·¡½º ¼³¸í:
-    È¸¿ø¿¡°Ô¼­ ¹ŞÀº È¸»çÀÌ¸§À» ÄÁÆ®·Ñ Å¬·¡½º¿¡°Ô ³Ñ°ÜÁØ´Ù.
+    - í´ë˜ìŠ¤ ì´ë¦„: SearchEmploymentUI
+    - í´ë˜ìŠ¤ ì„¤ëª…:
+    íšŒì›ì—ê²Œì„œ ë°›ì€ íšŒì‚¬ì´ë¦„ì„ ì»¨íŠ¸ë¡¤ í´ë˜ìŠ¤ì—ê²Œ ë„˜ê²¨ì¤€ë‹¤.
 */
 class SearchEmploymentUI
 {
@@ -14,7 +14,7 @@ class SearchEmploymentUI
 
 public:
     SearchEmploymentUI(SearchEmployment* control);
-    void SearchEmployments(GeneralMember* curMem, string corporationName, MemberDB& memDB);
+    void SearchEmployments(GeneralMember* curMem, string corporationName, MemberDB& memDB);        //íšŒì‚¬ì´ë¦„ì„ controlí´ë˜ìŠ¤ì— ë„˜ê²¨ì¤˜ ê²€ìƒ‰ìš”ì²­í•œë‹¤.
 };
 
 #endif
